@@ -1,0 +1,17 @@
+@import "../variables";
+
+$links-font-size: 1.2rem;
+
+.links-wrapper {
+  margin: 0 auto;
+  text-align: center;
+  font-size: $links-font-size;
+  line-height: $line-height;
+  background: linear-gradient($from-color,$to-color);
+
+  .link {
+    padding: 10px;
+    text-decoration: none;
+    color: $white;
+  }
+}

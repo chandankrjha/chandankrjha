@@ -1,8 +1,8 @@
 import React from "react";
-import {Route, Switch} from "react-router-dom";
 import {connect} from "react-redux";
 import * as actions from "./appActions";
-import MainPage from "../pages/mainPage";
+import Routes from "./config/Routes";
+import Nav from "./sections/nav/Nav";
 
 class App extends React.Component {
   componentWillMount() {
@@ -15,9 +15,8 @@ class App extends React.Component {
     }
     return (
       <div>
-        <Switch>
-          <Route path='/' component={MainPage} />
-        </Switch>
+        <Nav />
+        <Routes />
       </div>
     );
   }

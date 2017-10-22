@@ -96,6 +96,7 @@
       "react-app"
     ]
   },
+  "homepage" : "http://chandankrjha.github.io/chandankrjha",  
   "eslintConfig": {
     "extends": "react-app"
   }

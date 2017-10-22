@@ -2,14 +2,11 @@ import React from "react";
 import {Route, Switch} from "react-router-dom";
 import {connect} from "react-redux";
 import * as actions from "./appActions";
-import AssetsPage from "../assets/AssetsPage";
+import MainPage from "../pages/mainPage";
 
 class App extends React.Component {
   componentWillMount() {
-    let params = {
-      namespace: window.namespace
-    };
-    this.props.dispatch(actions.init(params))
+    this.props.dispatch(actions.init({}))
   }
 
   render() {
@@ -19,7 +16,7 @@ class App extends React.Component {
     return (
       <div>
         <Switch>
-          <Route path='/ecenter/smart/assets/images' component={AssetsPage} />
+          <Route path='/' component={MainPage} />
         </Switch>
       </div>
     );

@@ -21,8 +21,4 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-<<<<<<< 670b382071143dd995fec2f276fa2774d0bc2e03
-/src/styles/*.css
-=======
 src/**/*.css
->>>>>>> node sass

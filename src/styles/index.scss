@@ -1,5 +1,5 @@
-@import "./components/_nav";
-@import "./components/_landing";
+@import "nav.scss";
+@import "landing.scss";
 
 html, body {
   margin: 0;
@@ -7,5 +7,9 @@ html, body {
   font-family: $base-font-family;
   font-size: $base-font-size;
   background-color: $white;
+}
+
+.app-wrapper {
+  margin: 0 10em;
 }
 

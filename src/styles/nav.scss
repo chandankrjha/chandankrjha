@@ -1,4 +1,4 @@
-@import "../variables";
+@import "variables.scss";
 
 $links-font-size: 1.2rem;
 
@@ -6,12 +6,17 @@ $links-font-size: 1.2rem;
   margin: 0 auto;
   text-align: center;
   font-size: $links-font-size;
-  line-height: $line-height;
-  background: linear-gradient($from-color,$to-color);
+  line-height: $line-height-navbar;
+  background: linear-gradient(to right bottom, $from-color,$to-color);
 
   .link {
     padding: 10px;
     text-decoration: none;
     color: $white;
+
+    &:hover {
+      color: black;
+      
+    }
   }
 }

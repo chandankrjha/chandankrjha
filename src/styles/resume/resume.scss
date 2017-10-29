@@ -1,0 +1,17 @@
+.resume-wr {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  .content-wr {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    flex-direction: column;
+  }
+  
+  .header-wr {
+    max-width: 50%;
+  }
+}
+

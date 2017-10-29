@@ -11,6 +11,7 @@ class Nav extends React.Component {
         <Link to="travel" className="link">Travel</Link>
         <Link to="about" className="link">About</Link>
         <Link to="thoughts" className="link">Thoughts</Link>
+        <Link to="curriculumvitae" className="link">CV</Link>
       </nav>
     );
   }

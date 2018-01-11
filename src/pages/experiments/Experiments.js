@@ -5,7 +5,7 @@ class ExperimentsPage extends React.Component {
   render() {
     return (
       <div>
-        ExperimentsPage
+        Experiments related to anything in general.
       </div>
     );
   }

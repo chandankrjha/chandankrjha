@@ -5,7 +5,7 @@ class PhotographyPage extends React.Component {
   render() {
     return (
       <div>
-        Photography page
+        To be added the flickr and 500px links
       </div>
     );
   }

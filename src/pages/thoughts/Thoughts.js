@@ -3,10 +3,9 @@ import React from 'react';
 class ThoughtsPage extends React.Component {
 
   render() {
-    console.log('aha');
     return (
       <div>
-        Thoughts Page
+        In general thoughts about anything.
       </div>
     );
   }

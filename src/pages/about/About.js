@@ -5,7 +5,7 @@ class AboutPage extends React.Component {
   render() {
     return (
       <div>
-        About Page
+        About Page for Chandan Kumar Jha Personal Website
       </div>
     );
   }

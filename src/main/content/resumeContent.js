@@ -1,17 +1,17 @@
 export default {
   header: {
-    text: 'hhh'
+    text: 'Chandan Kumar Jha'
   },
   leftSection: [
     {
-      header: "Profile",
-      content: "This is profile content"
+      header: "Web Developer",
+      content: "Working as a full stack developer."
     }
   ],
   rightSection: [
     {
-      header: "Right First",
-      content: "This is right first content"
+      header: "Learner",
+      content: "Hobby of Photography, Videography and Anything New"
     }
   ]
 }

@@ -3,7 +3,6 @@ import React from "react";
 const Resume = ({ resumeContent }) => {
   return <div className="resume-wr">
     <header className="header-wr">
-        <img src='' alt='chandan' />
         {resumeContent.header.text}
     </header>
     <section className="content-wr">
@@ -27,9 +26,13 @@ const Resume = ({ resumeContent }) => {
 }
 
 const SubArticle = ({ item }) => {
-  return <article>
-    {item.header}
-    {item.content}
+  return <article className="sub-ar">
+    <div className="header">
+      {item.header}
+    </div>
+    <div className="content">
+      {item.content}
+    </div>
   </article>
 }
 

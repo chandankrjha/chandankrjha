@@ -17,4 +17,12 @@ class Form extends React.Component{
   }
 }
 
+const conditional = ({ field }) => {
+  if(field.type === "input") {
+    return <input type={field.subType} />
+  } else {
+    return "";
+  }
+}
+
 export default Form;

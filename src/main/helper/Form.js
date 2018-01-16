@@ -1,5 +1,5 @@
 import React from 'react';
-
+import * as FormUtils from '../../utils/formUtils';
 class Form extends React.Component{
   render() {
     let { fields } = this.props;
@@ -7,9 +7,9 @@ class Form extends React.Component{
       <form>
         {
           fields.map((field) => {
-            return {
-              field
-            }
+            FormUtils.attachValueOnChange(field.name)
+            
+            return conditional(field);
           })
         }
       </form>

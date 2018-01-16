@@ -1,6 +1,6 @@
 export default {
   header: {
-    text: 'Chandan Kumar Jha'
+    text: 'Chandan Kumar Jha Web Developer'
   },
   leftSection: [
     {

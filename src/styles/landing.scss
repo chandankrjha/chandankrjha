@@ -1,15 +1,21 @@
 .landing-wrapper {
   display: flex;
+  flex-direction: column;
 
-  .landing-image {
-    width: 500px;
-    height: auto;
-    float: left;
-    margin: 2rem;
+  .landing-image-wrapper {
+    margin: 0 auto;
+    
+    .landing-image {
+      max-width: 500px;
+      height: auto;
+      float: left;
+      margin: 2rem;
+    }
   }
+  
 
   .landing-text {
-    margin: auto;
+    margin: 0 2rem;
   }
 }
 

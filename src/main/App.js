@@ -15,7 +15,6 @@ class App extends React.Component {
     }
     return (
       <div>
-        <a className="home-link" href="/">Chandan</a>
         <Nav />
         <div className="app-wrapper">
           <Routes />

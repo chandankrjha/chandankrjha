@@ -2,7 +2,7 @@
 
 $links-font-size: 1.2rem;
 
-.links-wrapper {
+.links-common {
   margin: 0 auto;
   text-align: center;
   font-size: $links-font-size;
@@ -18,5 +18,11 @@ $links-font-size: 1.2rem;
       color: black;
       
     }
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .links-common.wrapper {
+    display: none;
   }
 }

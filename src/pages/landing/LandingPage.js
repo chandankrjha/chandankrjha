@@ -6,7 +6,7 @@ class LandingPage extends React.Component {
   render() {
     return (
       <div className="landing-wrapper">
-        <div>
+        <div className="landing-image-wrapper">
           <img className="landing-image" src={ImageConstants.DEFAULT_IMAGE} alt="chandan"/>
         </div>
         <div className="landing-text">

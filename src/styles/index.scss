@@ -11,13 +11,40 @@ html, body {
 }
 
 .app-wrapper {
-  margin: 0 10em;
+  margin: 0 2rem;
 }
 
-.home-link {
+.home-common {
   position: absolute;
   color: white;
   top: 1.5rem;
   left: 1.5rem;
   text-decoration: none;
+}
+
+.home-dropdown {
+  display: none;
+}
+
+
+@media only screen and (max-width: 750px) {
+  .home-link {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .home-dropdown{
+    display: block;
+    line-height: 8px;
+    color: black;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
 }

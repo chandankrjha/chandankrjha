@@ -35,7 +35,10 @@ class Nav extends React.Component {
     return (
       <div>
         <a className="home-common home-link" href="/">Chandan</a>
-        <a className="home-common home-dropdown" href="" onClick={(e) => this.handleDropDown(e)}>...</a>
+        <div className="home-dropdown small-screen" onClick={(e) => this.handleDropDown(e)}>
+          ...
+        </div>
+
         <nav className="links-common wrapper">
           <Link to="experiments" className="link">Experiments</Link>
           <Link to="photography" className="link">Photography</Link>
@@ -45,14 +48,14 @@ class Nav extends React.Component {
           <Link to="curriculumvitae" className="link">CV</Link>
         </nav>
 
-        <nav className={ 'links-common links-dropdown' + (this.state.showDropDown ? ' show': ' hide')}>
-          <Link to="experiments" className="link">Experiments</Link>
-          <Link to="photography" className="link">Photography</Link>
-          <Link to="travel" className="link">Travel</Link>
-          <Link to="about" className="link">About</Link>
-          <Link to="thoughts" className="link">Thoughts</Link>
-          <Link to="curriculumvitae" className="link">CV</Link>
-        </nav>
+        <ul className={ 'links-dropdown dropdown' + (this.state.showDropDown ? ' show': ' hide')}>
+          <li><Link to="experiments" className="link">Experiments</Link></li>
+          <li><Link to="photography" className="link">Photography</Link></li>
+          <li><Link to="travel" className="link">Travel</Link></li>
+          <li><Link to="about" className="link">About</Link></li>
+          <li><Link to="thoughts" className="link">Thoughts</Link></li>
+          <li><Link to="curriculumvitae" className="link">CV</Link></li>
+        </ul>
       </div>
     );
   }

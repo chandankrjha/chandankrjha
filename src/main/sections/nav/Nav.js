@@ -13,7 +13,6 @@ class Nav extends React.Component {
 
   handleDropDown(e) {
     e.preventDefault();
-
     this.setState({
       showDropDown: !this.state.showDropDown
     });
@@ -48,7 +47,9 @@ class Nav extends React.Component {
           <Link to="curriculumvitae" className="link">CV</Link>
         </nav>
 
-        <ul className={ 'links-dropdown dropdown' + (this.state.showDropDown ? ' show': ' hide')}>
+        <ul onClick={(e) => this.handleDropDown(e)}
+            className={ 'links-dropdown dropdown' + (this.state.showDropDown ? ' show': ' hide')}>
+          <li><Link to="/" className="link">Home</Link></li>
           <li><Link to="experiments" className="link">Experiments</Link></li>
           <li><Link to="photography" className="link">Photography</Link></li>
           <li><Link to="travel" className="link">Travel</Link></li>
